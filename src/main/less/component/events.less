@@ -1,0 +1,55 @@
+.safarnama-events {
+    padding: @absolute-very-tight;
+    margin: @absolute-tight @absolute-very-tight;
+    border-radius: @absolute-very-tight;
+
+    &-header {
+        padding: @absolute-very-tight;
+        text-align: center;
+        margin: @absolute-very-tight;
+        border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+        .font(@dimgrey)
+    }
+
+    &-body-content {
+        &-items {
+            .large-screen( {
+              .flex-basis(25%);
+              max-width:25%;
+            }
+
+            );
+
+            .medium-screen( {
+              .flex-basis(33.33%);
+              max-width:33.33%;
+            }
+
+            );
+
+            .small-portrait( {
+              .flex-basis(100%);
+              max-width:100%;
+            }
+
+            );
+
+            .small-landscape( {
+              .flex-basis(50%);
+              max-width:50%;
+            }
+
+            );
+            padding: @absolute-very-tight;
+        }
+
+        &-no-results {
+            padding: @absolute-very-tight;
+            text-align: center;
+            margin: @absolute-very-tight;
+            border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+            .font(@dimgrey, @absolute-loose);
+            .flex-grow(1);
+        }
+    }
+}

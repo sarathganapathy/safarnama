@@ -1,0 +1,123 @@
+.about-us {
+    &-wrapper {
+        padding: @absolute-very-tight;
+        margin: @absolute-tight @absolute-very-tight;
+        border-radius: @absolute-very-tight;
+    }
+
+    &-description {
+        padding: @absolute-loose;
+        margin: @absolute-very-tight;
+        border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+    }
+
+    &-content {
+        padding: @absolute-very-tight;
+        margin: @absolute-very-tight;
+        border-radius: @absolute-very-tight;
+    }
+
+    &-user-details {
+        padding: @absolute-very-tight;
+        margin: @absolute-very-tight;
+        border-radius: @absolute-very-tight;
+        box-sizing: border-box;
+        &-avatar {
+            .large-screen( {
+                .flex(1, 1, 15%);
+                max-width: 15%;
+            }
+
+            );
+
+            .medium-screen( {
+                .flex(1, 1, 15%);
+                max-width: 15%;
+            }
+
+            );
+
+            .small-portrait( {
+                .flex(1, 1, 25%);
+                max-width: 25%;
+            }
+
+            );
+
+            .small-landscape( {
+                .flex(1, 1, 20%);
+                max-width: 20%;
+            }
+
+            );
+            margin:@absolute-very-tight;
+
+            & img {
+                border-radius: 50%;
+
+                .large-screen( {
+                    height: 120px;
+                    width: 120px;
+                }
+
+                );
+
+                .medium-screen( {
+                    height: 85px;
+                    width: 85px;
+                }
+
+                );
+
+                .small-portrait( {
+                    height: 60px;
+                    width: 60px;
+                }
+
+                );
+
+                .small-landscape( {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                )
+            }
+
+            &-username {
+                word-wrap: break-word;
+            }
+        }
+
+        &-description {
+            .large-screen( {
+                .flex(1, 1, 85%);
+                max-width: 85%;
+            }
+
+            );
+
+            .medium-screen( {
+                .flex(1, 1, 85%);
+                max-width: 85%;
+            }
+
+            );
+
+            .small-portrait( {
+                .flex(1, 1, 75%);
+                max-width: 75%;
+            }
+
+            );
+
+            .small-landscape( {
+                .flex(1, 1, 80%);
+                max-width: 80%;
+            }
+
+            );
+            margin:@absolute-very-tight;
+        }
+    }
+}

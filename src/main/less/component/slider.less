@@ -1,0 +1,29 @@
+// overiding the carosel to adjust the height
+.carousel {
+    .thumb {
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    .slide {
+        img {
+            max-height: 200px;
+            width: 99%;
+        }
+
+        background: whitesmoke;
+    }
+}
+
+.safarnama-carousel {
+    padding: 0 @absolute-very-tight 0 @absolute-very-tight;
+
+    &-wrapper {
+        padding: @absolute-very-tight;
+        margin: @absolute-very-tight;
+        border-radius: @absolute-very-tight;
+        .background-theme();
+    }
+}

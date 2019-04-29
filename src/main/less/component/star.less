@@ -1,0 +1,32 @@
+.star(@color: yellow){
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid @color;
+    position: relative;
+    &:after {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid @color;
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: -10px;
+    }
+
+}
+.star{
+    &-container{
+        margin:@relative-very-tight;
+    }
+    &-selected{
+        .star(gold);
+    }
+    
+    &-deselected{
+        .star(@dimgrey);
+    }
+}

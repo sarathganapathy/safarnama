@@ -1,0 +1,45 @@
+.safarnama-card {
+    &-header {
+        padding: 0 !important;
+        text-align: center;
+        .background-theme(@gainsboro-light);
+
+        &-text {
+            .font(@dimgrey) !important;
+            .text-over-flow();
+        }
+        &-content {
+            max-width:100%
+        }
+
+        border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+    }
+    &-body{
+        &-text {
+            .font(@dimgrey, @absolute-loose, sariff) !important
+        }
+    }
+
+    &-root {
+        max-width: 100%;
+    }
+
+    &-media {
+        height: 0;
+        padding-top: 56.25%;
+    }
+
+    &-action {
+        .display();
+    }
+
+    &-expand {
+        transform: rotate(0deg) ;
+        transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;;
+        margin-left: auto !important;;
+    }
+
+    &-expand-open {
+        transform: rotate(180deg)
+    }
+}

@@ -1,0 +1,23 @@
+// Property Name: font
+// Values: header | bodyheader
+.font(@color : @light-black, @size : @absolute-very-loose, @family : monospace, @weight : @font-weight-thin ) {
+    color: @color;
+    font-size: @size;
+    font-weight: @weight;
+    font-family: @family;
+    line-height: 1.35417em;
+}
+
+// Property Name: background-theme
+// Values: background-color
+.background-theme(@bg-color: @white) {
+    background-color: @bg-color;
+    box-shadow: @box-shadow;
+}
+
+// Property Name: text overflow
+.text-over-flow(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

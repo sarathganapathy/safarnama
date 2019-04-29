@@ -1,0 +1,34 @@
+.safarnama-app {
+    &-root {
+        .flex-grow(1);
+        width: '100%';
+        background-color: whitesmoke;
+    }
+
+    &-tabs {
+        &-background {
+            .flex-grow(1);
+            width: '100%';
+            background-color: whitesmoke;
+            background-image: @light-gradient-white;
+            opacity: @opacity-ninty-five;
+        }
+
+        &-wrapper {
+            box-sizing: border-box;
+            padding: @absolute-very-tight;
+            border-radius: @absolute-very-tight;
+        }
+
+        &-menu-wrapper {
+            margin: @absolute-very-tight @absolute-very-tight 0 @absolute-very-tight;
+            border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+        }
+    }
+
+    &-tab-background {
+        color: black;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

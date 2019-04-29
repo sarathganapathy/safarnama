@@ -1,0 +1,80 @@
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+.extra-large(@rule){
+    @media screen and (min-width: 1281px) {
+       @rule()
+    }
+}
+  
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+  
+.large(@rule){
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+       @rule()
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+.medium-portrait(@rule){
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+       @rule()
+    }
+}
+ 
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+.medium-landscape(@rule){
+    @media  screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+       @rule()
+    }
+}
+  
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+  
+.small-landscape(@rule){
+    @media  screen and(min-width: 481px) and (max-width: 767px) {
+       @rule()
+    }
+}
+  
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+.small-portrait(@rule){
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+       @rule()
+    }
+}
+
+// when css for landscape and portrait need to be same
+// large screens
+.large-screen(@rule){
+    .extra-large(@rule);
+    .large(@rule);
+}
+
+// medium screens
+.medium-screen(@rule){
+    .medium-portrait(@rule);
+    .medium-landscape(@rule);
+}
+
+// small screens
+.small-screen(@rule){
+    .small-landscape(@rule);
+    .small-portrait(@rule);
+}

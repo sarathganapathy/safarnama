@@ -1,0 +1,50 @@
+.util-flex {
+    &-container {
+        .display();
+    }
+
+    &-wrap {
+        .display();
+        .flex-wrap(wrap)
+    }
+
+    &-nowrap {
+        .display();
+        .flex-wrap()
+    }
+
+    &-directio-row {
+        .display();
+        .flex-direction();
+    }
+
+    &-directio-column {
+        .display();
+        .flex-direction(column);
+    }
+
+    &-flow-row-wrap {
+        .display();
+        .flex-flow(row, wrap);
+    }
+
+    &-flow-row-nowrap {
+        .display();
+        .flex-flow();
+    }
+
+    &-flow-column-wrap {
+        .display();
+        .flex-flow(column, wrap);
+    }
+
+    &-flow-column-nowrap {
+        .display();
+        .flex-flow(column);
+    }
+
+    &-align-right {
+        .display();
+        .justify-content(flex-end);
+    }
+}
