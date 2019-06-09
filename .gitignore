@@ -1,1 +1,12 @@
-node_modules/
+# Dependency Modules
+node_modules
+
+# App Packaged
+dist/
+*.zip
+
+# NPM
+.npm
+package-lock.json
+
+
