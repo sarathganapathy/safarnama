@@ -15,6 +15,13 @@ import {
 export const addReviewComments = payload => ({ type: ACTIONS_TYPES.ADD_COMMENT, payload });
 
 /**
+ * @desc action creator for page status
+ * @param {Object} payload - payload which will be attached to the action
+ * @return {Object} this function returns action with type and payload.
+ */
+export const pageStatus = payload => ({ type: ACTIONS_TYPES.STATUS, payload });
+
+/**
  * @desc action creator for setInitialData
  * @param {Object} payload - payload which will be attached to the action
  * @return {Object} this function returns action with type and payload.
@@ -37,12 +44,14 @@ export const addBlogs = payload => ({ type: ACTIONS_TYPES.ADD_BLOG, payload });
  */
 export const getInitialSafarnamaData = () => async (dispatch) => {
   try {
+    dispatch(pageStatus({ isLoading: true }));
     const { data: safarnamaData } = await getSafarnamaData();
     dispatch(
       setInitialData(safarnamaData)
     );
+    dispatch(pageStatus({ isLoading: false }));
   } catch (error) {
-    // @TO-DO NEED TO HANDLE
+    dispatch(pageStatus({ isLoading: false, hasError: true }));
   }
 };
 
@@ -53,13 +62,15 @@ export const getInitialSafarnamaData = () => async (dispatch) => {
  */
 export const createUserBlog = blog => async (dispatch) => {
   try {
+    dispatch(pageStatus({ isLoading: true }));
     await addBlogData(blog);
     const { data: { blogs } } = await getBlogData();
     dispatch(
       addBlogs(blogs)
     );
+    dispatch(pageStatus({ isLoading: false }));
   } catch (error) {
-    // @TO-DO NEED TO HANDLE
+    dispatch(pageStatus({ isLoading: false, hasError: true }));
   }
 };
 
@@ -70,12 +81,14 @@ export const createUserBlog = blog => async (dispatch) => {
  */
 export const createUserReview = review => async (dispatch) => {
   try {
+    dispatch(pageStatus({ isLoading: true }));
     await addReviewData(review);
     const { data: { reviews } } = await getReviewData();
     dispatch(
       addReviewComments(reviews)
     );
+    dispatch(pageStatus({ isLoading: false }));
   } catch (error) {
-    // @TO-DO NEED TO HANDLE
+    dispatch(pageStatus({ isLoading: false, hasError: true }));
   }
 };

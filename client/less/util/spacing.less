@@ -1,0 +1,46 @@
+// Property Name: create-spacing
+// value 1 : margin / padding
+// value 2 : absolute / relative
+.create-spacing(@attribute, @type){
+    &-@{attribute}-@{type} {
+        &-tight {
+            @{attribute}: ~"@{@{type}-tight}"
+        }
+        &-loose {
+            @{attribute}: ~"@{@{type}-loose}"
+        }
+        &-very-tight {
+            @{attribute}: ~"@{@{type}-very-tight}"
+        }
+        &-very-loose {
+            @{attribute}: ~"@{@{type}-very-loose}"
+        }
+    }
+}
+
+.util {
+    .create-spacing(margin,absolute);
+    .create-spacing(margin,relative);
+    .create-spacing(padding,absolute);
+    .create-spacing(padding,relative);
+    
+    .create-spacing(margin-top,absolute);
+    .create-spacing(margin-top,relative);
+    .create-spacing(padding-top,absolute);
+    .create-spacing(padding-top,relative);
+    
+    .create-spacing(margin-bottom,absolute);
+    .create-spacing(margin-bottom,relative);
+    .create-spacing(padding-bottom,absolute);
+    .create-spacing(padding-bottom,relative);
+
+    .create-spacing(margin-left,absolute);
+    .create-spacing(margin-left,relative);
+    .create-spacing(padding-left,absolute);
+    .create-spacing(padding-left,relative);
+
+    .create-spacing(margin-right,absolute);
+    .create-spacing(margin-right,relative);
+    .create-spacing(padding-right,absolute);
+    .create-spacing(padding-right,relative);
+}

@@ -1,4 +1,5 @@
 const express = require('express');
+const passport = require('passport');
 const {
   getAllBookings,
   createBooking,
@@ -6,6 +7,7 @@ const {
   getBookingById,
   deleteBooking
 } = require('../controllers/bookingController');
+require('../config/passportConfig')(passport);
 
 const router = express.Router();
 
@@ -13,14 +15,14 @@ const router = express.Router();
 
 router.get("/", getAllBookings);
 
-router.post("/", createBooking);
+router.post("/", passport.authenticate('jwt', { session: false }), createBooking);
 
 router.get("/:bookingId", getBookingById);
 
-router.patch("/:bookingId", updateBooking);
+router.patch("/:bookingId", passport.authenticate('jwt', { session: false }), updateBooking);
 
-router.put("/:bookingId", updateBooking);
+router.put("/:bookingId", passport.authenticate('jwt', { session: false }), updateBooking);
 
-router.delete("/:bookingId", deleteBooking);
+router.delete("/:bookingId", passport.authenticate('jwt', { session: false }), deleteBooking);
 
 module.exports = router;

@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 const express = require('express');
+const session = require('express-session');
 const path = require('path');
 const bodyParser = require('body-parser');
 const morgan = require("morgan");
@@ -9,11 +10,13 @@ const mainPageRouter = require('./routes/index');
 const initialLoadRouter = require('./routes/initialLoadRouter');
 const eventRouter = require('./routes/eventRouter');
 const userRouter = require('./routes/userRouter');
+const authorizationRouter = require('./routes/authorizationRouter');
 const blogRouter = require('./routes/blogRouter');
 const bookingRouter = require('./routes/bookingRouter');
 const reviewRouter = require('./routes/reviewRouter');
 const workWithUsRouter = require('./routes/workWithUsRouter');
 const logger = require("./config/logConfig");
+const sessionSetting = require("./config/sessionSetting");
 const { LOCAL_PATHS, ROUTE_PATHS, STATUS_CODE } = require('./constants/constants');
 require('./config/environment');
 
@@ -39,6 +42,12 @@ app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// middleware for handling session
+app.use(session({
+  secret: sessionSetting.secret,
+  resave: false,
+  saveUninitialized: true
+}));
 // initial bundled dist folder to load the client
 app.use(express.static(assetFolder));
 // all the uploaded files from client will get saved to this folder
@@ -63,6 +72,7 @@ app.use(ROUTE_PATHS.INITIAL_DATA, initialLoadRouter);
 app.use(ROUTE_PATHS.EVENTS, eventRouter);
 app.use(ROUTE_PATHS.BLOGS, blogRouter);
 app.use(ROUTE_PATHS.USERS, userRouter);
+app.use(ROUTE_PATHS.AUTHORIZATION, authorizationRouter);
 app.use(ROUTE_PATHS.BOOKINGS, bookingRouter);
 app.use(ROUTE_PATHS.REVIEWS, reviewRouter);
 app.use(ROUTE_PATHS.WORK_WITH_US, workWithUsRouter);
@@ -74,6 +84,7 @@ app.use((req, res, next) => {
 });
 
 app.use((error, req, res, next) => {
+  logger.error("unexpected error", error);
   res.status(error.status || STATUS_CODE.INTERNAL_SERVER_ERROR);
   res.json({
     error: {

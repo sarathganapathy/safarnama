@@ -4,15 +4,13 @@ import i18n from '../../i18n/i18n';
 
 /**
  * @function Footer
- * @desc This is the Function for safarnama footer
+ * @desc This is the function for footer
 */
-function Footer({ footerLabel }) {
-  return (
-    <div className="safarnama-footer">
-      {footerLabel}
-    </div>
-  );
-}
+const Footer = ({ footerLabel }) => (
+  <div className="safarnama-footer">
+    {footerLabel}
+  </div>
+);
 
 Footer.propTypes = {
   footerLabel: PropTypes.string

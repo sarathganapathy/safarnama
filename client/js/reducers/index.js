@@ -3,6 +3,7 @@ import eventsData from "./eventsReducer";
 import blogsData from "./blogsReducer";
 import reviewsData from "./reviewsReducer";
 import workWithUsData from "./workWithUsReducer";
+import statusData from "./statusReducer";
 
 /**
  * @desc combines all the reducers
@@ -10,8 +11,9 @@ import workWithUsData from "./workWithUsReducer";
  * @return {Object} returns combined reducers.
  */
 export default combineReducers({
-  eventsData,
   blogsData,
+  eventsData,
+  statusData,
   reviewsData,
   workWithUsData
 });

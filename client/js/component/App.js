@@ -10,7 +10,7 @@ import AppBar from '@material-ui/core/AppBar';
 import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Logo from './bodyContent/Logo';
+import Header from './bodyContent/Header';
 import i18n from '../i18n/i18n';
 import AboutUs from './bodyContent/AboutUs';
 import Home from './bodyContent/Home';
@@ -116,7 +116,7 @@ class App extends React.Component {
         <Router>
           <AppBar position="fixed" color="default" className="safarnama-app-tabs-background">
             <div ref={this.tabContainer} className="safarnama-app-tabs-wrapper util-background-container">
-              <Logo />
+              <Header />
               <Tabs
                 className="safarnama-app-tabs-menu-wrapper"
                 indicatorColor="primary"

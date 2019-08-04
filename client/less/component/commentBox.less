@@ -1,19 +1,20 @@
 .comment-box {
     &-details {
-        padding: @absolute-very-tight @absolute-very-tight 0;
+        padding: @absolute-tight;
         margin: @absolute-loose @absolute-very-tight 0;
         border-radius: @absolute-very-tight @absolute-very-tight 0 0;
         white-space: pre-wrap;
         .background-theme(@gainsboro);
-        .font(black, @absolute-loose);
+        .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
     }
 
     &-user {
-        padding: 0 @absolute-very-tight  @absolute-very-tight;
+        padding: @absolute-very-tight @absolute-tight;
         margin:  0 @absolute-very-tight @absolute-loose;
         border-radius: 0 0 @absolute-very-tight @absolute-very-tight;
         text-align: right;
-        .font(black, @absolute-loose);
+        //.font(black, @absolute-loose);
         .background-theme(@gainsboro);
+        .font(black, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
     }
 }

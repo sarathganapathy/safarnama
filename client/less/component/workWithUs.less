@@ -3,6 +3,7 @@
     margin: @absolute-very-tight;
     border-radius: @absolute-very-tight;
     word-wrap: break-word;
+    background: @light-gradient-grey;
 }
 
 .work-with-us-body-content(){
@@ -11,37 +12,55 @@
     border-radius: @absolute-very-tight;
 }
 
-.work-with-us {
+.safarnama-work-with-us {
     &-wrapper {
         padding: @absolute-very-tight;
         margin: @absolute-tight @absolute-very-tight;
         border-radius: @absolute-very-tight;
     }
 
-    &-description {
-        &-header, &-data{
-            padding:@absolute-very-tight @absolute-loose;
+    &-background-shade {
+        border-radius: @absolute-very-tight;
+        background-color: @darkgrey;
+        box-shadow: @box-shadow;
+    }
+    
+    &-description { 
+        &-header {
+            padding: @absolute-tight;
             margin: @absolute-very-tight;
             border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+            white-space: pre-wrap;
+            .font(@mediumgrey, @absolute-very-loose, @text-description, @font-weight-thick);
+            text-align: center;
+            background: @light-gradient-grey;
+        }
+        &-data{
+            margin: @absolute-very-tight;
+            border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+            white-space: pre-wrap;
+            background: @light-gradient-grey;
+            word-wrap: break-word;
+            padding: @absolute-loose;
+            text-align: left;
+            .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
         }
     }
     &-content{
         .work-with-us-body-content()
     }
 
-    &-no-result-label {
-        text-align: center;
-        .work-with-us-body-content();
-        .font(@dimgrey, @absolute-loose);
-    }
-
     &-contact {
         &-phone {
             .work-with-us-contact();
-            .font(@dimgrey, @absolute-loose);
+            .font(@mediumgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
         }
         &-email {
             .work-with-us-contact();
+            .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
+        }
+        &-label {
+            .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
         }
     }
 }

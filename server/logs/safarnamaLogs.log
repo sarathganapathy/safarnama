@@ -1,70 +1,30 @@
-[2019-06-09T16:45:43.756] [INFO] safarnama - Connected to databse
-[2019-06-09T16:45:50.191] [INFO] safarnama - Connected to databse
-[2019-06-09T16:46:16.832] [INFO] safarnama - Connected to databse
-[2019-06-09T16:47:15.704] [INFO] safarnama - Connected to databse
-[2019-06-09T16:47:58.101] [INFO] safarnama - Connected to databse
-[2019-06-09T16:49:14.160] [INFO] safarnama - Connected to databse
-[2019-06-09T16:51:56.975] [INFO] safarnama - Connected to databse
-[2019-06-09T16:52:53.587] [INFO] safarnama - Connected to databse
-[2019-06-09T16:53:04.310] [INFO] safarnama - Connected to databse
-[2019-06-09T16:54:35.756] [INFO] safarnama - Connected to databse
-[2019-06-09T16:54:40.545] [INFO] safarnama - Connected to databse
-[2019-06-09T16:55:04.005] [INFO] safarnama - Connected to databse
-[2019-06-09T16:55:31.064] [INFO] safarnama - Connected to databse
-[2019-06-09T16:56:13.602] [INFO] safarnama - Connected to databse
-[2019-06-09T16:56:22.016] [INFO] safarnama - Connected to databse
-[2019-06-09T16:59:14.719] [INFO] safarnama - Connected to databse
-[2019-06-09T16:59:31.515] [INFO] safarnama - Connected to databse
-[2019-06-09T16:59:57.308] [INFO] safarnama - Connected to databse
-[2019-06-09T17:00:51.434] [INFO] safarnama - Connected to databse
-[2019-06-09T17:01:10.562] [INFO] safarnama - Connected to databse
-[2019-06-09T17:04:35.799] [INFO] safarnama - Connected to databse
-[2019-06-09T17:05:31.296] [INFO] safarnama - Connected to databse
-[2019-06-09T17:06:41.326] [INFO] safarnama - Connected to databse
-[2019-06-09T17:06:53.490] [INFO] safarnama - Connected to databse
-[2019-06-09T17:07:21.136] [INFO] safarnama - Connected to databse
-[2019-06-09T17:07:51.455] [INFO] safarnama - Connected to databse
-[2019-06-09T17:08:30.176] [INFO] safarnama - Connected to databse
-[2019-06-09T17:08:39.992] [INFO] safarnama - Connected to databse
-[2019-06-09T17:08:50.698] [INFO] safarnama - Connected to databse
-[2019-06-09T17:08:54.014] [INFO] safarnama - Connected to databse
-[2019-06-09T17:09:10.217] [INFO] safarnama - Connected to databse
-[2019-06-09T17:10:22.772] [INFO] safarnama - Connected to databse
-[2019-06-09T17:10:31.404] [INFO] safarnama - Connected to databse
-[2019-06-09T17:10:47.100] [INFO] safarnama - Connected to databse
-[2019-06-09T17:11:07.922] [INFO] safarnama - Connected to databse
-[2019-06-09T17:11:14.540] [INFO] safarnama - Connected to databse
-[2019-06-09T17:11:38.740] [INFO] safarnama - Connected to databse
-[2019-06-09T17:11:50.548] [INFO] safarnama - Connected to databse
-[2019-06-09T17:12:01.240] [INFO] safarnama - Connected to databse
-[2019-06-09T17:12:10.901] [INFO] safarnama - Connected to databse
-[2019-06-09T17:12:15.134] [INFO] safarnama - Connected to databse
-[2019-06-09T17:12:22.582] [INFO] safarnama - Connected to databse
-[2019-06-09T17:13:25.330] [INFO] safarnama - Connected to databse
-[2019-06-09T17:13:42.906] [INFO] safarnama - Connected to databse
-[2019-06-09T17:14:24.954] [INFO] safarnama - Connected to databse
-[2019-06-09T17:15:08.549] [INFO] safarnama - Connected to databse
-[2019-06-09T17:17:38.488] [INFO] safarnama - Connected to databse
-[2019-06-09T17:17:53.979] [INFO] safarnama - Connected to databse
-[2019-06-09T17:19:13.866] [INFO] safarnama - Connected to databse
-[2019-06-09T17:19:18.630] [INFO] safarnama - Connected to databse
-[2019-06-09T17:19:23.174] [INFO] safarnama - Connected to databse
-[2019-06-09T17:20:58.993] [INFO] safarnama - Connected to databse
-[2019-06-09T17:21:04.691] [INFO] safarnama - Connected to databse
-[2019-06-09T17:21:14.696] [INFO] safarnama - Connected to databse
-[2019-06-09T17:21:46.109] [INFO] safarnama - Connected to databse
-[2019-06-09T17:23:32.361] [INFO] safarnama - Connected to databse
-[2019-06-09T17:24:10.137] [INFO] safarnama - Connected to databse
-[2019-06-09T17:24:31.843] [INFO] safarnama - Connected to databse
-[2019-06-09T17:25:05.535] [INFO] safarnama - Connected to databse
-[2019-06-09T17:25:23.242] [INFO] safarnama - Connected to databse
-[2019-06-09T17:25:34.705] [INFO] safarnama - Connected to databse
-[2019-06-09T17:25:53.353] [INFO] safarnama - Connected to databse
-[2019-06-09T17:26:21.478] [INFO] safarnama - Connected to databse
-[2019-06-09T17:27:16.872] [INFO] safarnama - Connected to databse
-[2019-06-09T17:27:27.316] [INFO] safarnama - Connected to databse
-[2019-06-09T17:29:27.236] [INFO] safarnama - Connected to databse
-[2019-06-09T17:37:34.746] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
+[2019-08-05T01:26:13.551] [INFO] safarnama - Connected to databse
+[2019-08-05T01:26:26.745] [INFO] safarnama - Connected to databse
+[2019-08-05T01:26:33.544] [INFO] safarnama - Connected to databse
+[2019-08-05T01:27:29.287] [INFO] safarnama - Connected to databse
+[2019-08-05T01:27:58.010] [INFO] safarnama - Connected to databse
+[2019-08-05T01:28:10.391] [INFO] safarnama - Connected to databse
+[2019-08-05T01:28:14.573] [INFO] safarnama - Connected to databse
+[2019-08-05T01:28:41.366] [INFO] safarnama - Connected to databse
+[2019-08-05T01:29:26.200] [INFO] safarnama - Connected to databse
+[2019-08-05T01:31:40.917] [INFO] safarnama - Connected to databse
+[2019-08-05T01:32:02.037] [INFO] safarnama - Connected to databse
+[2019-08-05T01:32:48.382] [INFO] safarnama - Connected to databse
+[2019-08-05T01:33:01.268] [INFO] safarnama - Connected to databse
+[2019-08-05T01:33:10.066] [INFO] safarnama - Connected to databse
+[2019-08-05T01:33:58.847] [INFO] safarnama - Connected to databse
+[2019-08-05T01:34:33.039] [INFO] safarnama - Connected to databse
+[2019-08-05T01:34:37.444] [INFO] safarnama - Connected to databse
+[2019-08-05T01:35:44.156] [INFO] safarnama - Connected to databse
+[2019-08-05T01:36:18.281] [INFO] safarnama - Connected to databse
+[2019-08-05T01:36:45.728] [INFO] safarnama - Connected to databse
+[2019-08-05T01:36:49.271] [INFO] safarnama - Connected to databse
+[2019-08-05T01:36:53.371] [INFO] safarnama - Connected to databse
+[2019-08-05T01:37:17.221] [INFO] safarnama - Connected to databse
+[2019-08-05T01:37:31.091] [INFO] safarnama - Connected to databse
+[2019-08-05T01:37:39.982] [INFO] safarnama - Connected to databse
+[2019-08-05T01:43:11.878] [INFO] safarnama - Connected to databse
+[2019-08-05T01:43:18.022] [ERROR] safarnama - blogController - createBlog : { ValidationError: Blog validation failed: user: Path `user` is required.
     at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
     at formatValue (internal/util/inspect.js:493:31)
     at inspect (internal/util/inspect.js:191:10)
@@ -99,485 +59,38 @@
         value: undefined,
         reason: undefined,
         [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
+  _message: 'Blog validation failed',
   name: 'ValidationError' }
-[2019-06-09T17:39:07.432] [INFO] safarnama - Connected to databse
-[2019-06-09T17:39:20.741] [INFO] safarnama - Connected to databse
-[2019-06-09T17:39:42.189] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T17:47:45.658] [INFO] safarnama - Connected to databse
-[2019-06-09T17:48:01.296] [INFO] safarnama - Connected to databse
-[2019-06-09T17:54:04.171] [INFO] safarnama - Connected to databse
-[2019-06-09T17:54:15.418] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T17:55:09.639] [INFO] safarnama - Connected to databse
-[2019-06-09T17:55:13.452] [INFO] safarnama - Connected to databse
-[2019-06-09T17:57:56.528] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:00:49.532] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:01:10.321] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:01:43.576] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:03:13.617] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:03:31.264] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:07:40.287] [INFO] safarnama - Connected to databse
-[2019-06-09T18:07:56.261] [INFO] safarnama - Connected to databse
-[2019-06-09T18:08:24.317] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:08:57.811] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:09:22.055] [INFO] safarnama - Connected to databse
-[2019-06-09T18:09:51.053] [ERROR] safarnama - reviewController - createReview : { ValidationError: Review validation failed: user: Path `user` is required.
-    at ValidationError.inspect (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validation.js:59:24)
-    at formatValue (internal/util/inspect.js:493:31)
-    at inspect (internal/util/inspect.js:191:10)
-    at formatWithOptions (util.js:164:18)
-    at Object.format (util.js:72:10)
-    at basicLayout (D:\innovation\final\safarnama\node_modules\log4js\lib\layouts.js:65:57)
-    at app (D:\innovation\final\safarnama\node_modules\log4js\lib\appenders\file.js:55:18)
-    at categoryAppenders.forEach (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:42:5)
-    at Array.forEach (<anonymous>)
-    at sendLogEventToAppender (D:\innovation\final\safarnama\node_modules\log4js\lib\log4js.js:41:21)
-    at listeners.forEach.l (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:26)
-    at Array.forEach (<anonymous>)
-    at sendToListeners (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:16:13)
-    at Object.send (D:\innovation\final\safarnama\node_modules\log4js\lib\clustering.js:78:7)
-    at Logger._log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:86:16)
-    at Logger.log (D:\innovation\final\safarnama\node_modules\log4js\lib\logger.js:69:12)
-  errors:
-   { user:
-      { ValidatorError: Path `user` is required.
-          at new ValidatorError (D:\innovation\final\safarnama\node_modules\mongoose\lib\error\validator.js:29:11)
-          at validate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:978:13)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:1031:11
-          at Array.forEach (<anonymous>)
-          at ObjectId.SchemaType.doValidate (D:\innovation\final\safarnama\node_modules\mongoose\lib\schematype.js:987:14)
-          at D:\innovation\final\safarnama\node_modules\mongoose\lib\document.js:2101:9
-          at process._tickCallback (internal/process/next_tick.js:61:11)
-        message: 'Path `user` is required.',
-        name: 'ValidatorError',
-        properties: [Object],
-        kind: 'required',
-        path: 'user',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true } },
-  _message: 'Review validation failed',
-  name: 'ValidationError' }
-[2019-06-09T18:11:07.426] [INFO] safarnama - Connected to databse
-[2019-06-09T18:11:47.780] [INFO] safarnama - Connected to databse
-[2019-06-09T18:15:31.849] [INFO] safarnama - Connected to databse
-[2019-06-09T18:15:38.206] [INFO] safarnama - Connected to databse
-[2019-06-09T18:16:24.099] [INFO] safarnama - Connected to databse
-[2019-06-09T18:25:17.725] [INFO] safarnama - Connected to databse
-[2019-06-09T18:27:46.990] [INFO] safarnama - Connected to databse
-[2019-06-09T18:37:09.898] [INFO] safarnama - Connected to databse
-[2019-06-09T18:37:22.156] [INFO] safarnama - Connected to databse
-[2019-06-09T18:37:31.630] [INFO] safarnama - Connected to databse
-[2019-06-09T18:50:20.330] [INFO] safarnama - Connected to databse
-[2019-06-09T18:50:30.548] [INFO] safarnama - Connected to databse
-[2019-06-09T18:50:38.051] [INFO] safarnama - Connected to databse
-[2019-06-09T18:50:43.992] [INFO] safarnama - Connected to databse
-[2019-06-09T18:51:20.354] [INFO] safarnama - Connected to databse
-[2019-06-09T18:51:47.649] [INFO] safarnama - Connected to databse
-[2019-06-09T18:53:49.393] [INFO] safarnama - Connected to databse
-[2019-06-09T18:54:43.109] [INFO] safarnama - Connected to databse
-[2019-06-09T18:55:31.531] [INFO] safarnama - Connected to databse
-[2019-06-09T18:57:02.166] [INFO] safarnama - Connected to databse
-[2019-06-09T18:57:11.892] [INFO] safarnama - Connected to databse
-[2019-06-09T18:57:29.303] [INFO] safarnama - Connected to databse
-[2019-06-09T18:58:37.540] [INFO] safarnama - Connected to databse
-[2019-06-09T18:59:05.856] [INFO] safarnama - Connected to databse
-[2019-06-09T19:03:12.472] [INFO] safarnama - Connected to databse
-[2019-06-09T19:05:00.051] [INFO] safarnama - Connected to databse
-[2019-06-09T19:16:56.896] [INFO] safarnama - Connected to databse
-[2019-06-09T19:17:03.580] [INFO] safarnama - Connected to databse
-[2019-06-09T19:23:28.405] [INFO] safarnama - Connected to databse
-[2019-06-09T19:26:09.204] [INFO] safarnama - Connected to databse
-[2019-06-09T19:26:33.311] [INFO] safarnama - Connected to databse
-[2019-06-09T19:27:08.798] [INFO] safarnama - Connected to databse
-[2019-06-09T19:29:17.171] [INFO] safarnama - Connected to databse
-[2019-06-09T19:29:25.897] [INFO] safarnama - Connected to databse
-[2019-06-09T19:29:44.320] [INFO] safarnama - Connected to databse
-[2019-06-09T19:29:50.577] [INFO] safarnama - Connected to databse
-[2019-06-09T19:30:32.539] [INFO] safarnama - Connected to databse
-[2019-06-09T19:30:51.099] [INFO] safarnama - Connected to databse
-[2019-06-09T19:30:58.083] [INFO] safarnama - Connected to databse
-[2019-06-09T19:31:08.552] [INFO] safarnama - Connected to databse
-[2019-06-09T19:31:29.646] [INFO] safarnama - Connected to databse
-[2019-06-09T19:31:43.651] [INFO] safarnama - Connected to databse
-[2019-06-09T19:32:32.342] [INFO] safarnama - Connected to databse
-[2019-06-09T19:33:19.293] [INFO] safarnama - Connected to databse
-[2019-06-09T19:33:22.261] [INFO] safarnama - Connected to databse
-[2019-06-09T19:34:13.282] [INFO] safarnama - Connected to databse
-[2019-06-09T19:39:34.258] [INFO] safarnama - Connected to databse
-[2019-06-09T19:40:15.430] [INFO] safarnama - Connected to databse
-[2019-06-09T19:40:37.412] [INFO] safarnama - Connected to databse
-[2019-06-09T19:40:57.965] [INFO] safarnama - Connected to databse
-[2019-06-09T19:41:05.687] [INFO] safarnama - Connected to databse
-[2019-06-09T19:47:34.291] [INFO] safarnama - Connected to databse
-[2019-06-09T19:52:35.491] [INFO] safarnama - Connected to databse
-[2019-06-09T19:52:47.586] [INFO] safarnama - Connected to databse
-[2019-06-09T19:53:18.005] [INFO] safarnama - Connected to databse
-[2019-06-09T19:53:24.215] [INFO] safarnama - Connected to databse
-[2019-06-09T19:58:13.669] [INFO] safarnama - Connected to databse
-[2019-06-09T20:04:27.584] [INFO] safarnama - Connected to databse
-[2019-06-09T20:04:36.586] [INFO] safarnama - Connected to databse
-[2019-06-09T20:05:18.267] [INFO] safarnama - Connected to databse
-[2019-06-09T20:05:24.100] [INFO] safarnama - Connected to databse
-[2019-06-09T20:47:48.508] [INFO] safarnama - Connected to databse
-[2019-06-09T20:48:01.549] [INFO] safarnama - Connected to databse
+[2019-08-05T01:44:44.090] [INFO] safarnama - Connected to databse
+[2019-08-05T01:45:06.421] [INFO] safarnama - Connected to databse
+[2019-08-05T01:45:19.505] [INFO] safarnama - Connected to databse
+[2019-08-05T01:46:16.981] [INFO] safarnama - Connected to databse
+[2019-08-05T01:46:24.680] [INFO] safarnama - Connected to databse
+[2019-08-05T01:46:50.675] [INFO] safarnama - Connected to databse
+[2019-08-05T01:46:59.148] [INFO] safarnama - Connected to databse
+[2019-08-05T01:47:07.701] [INFO] safarnama - Connected to databse
+[2019-08-05T01:47:29.541] [INFO] safarnama - Connected to databse
+[2019-08-05T01:48:19.849] [INFO] safarnama - Connected to databse
+[2019-08-05T01:48:26.069] [INFO] safarnama - Connected to databse
+[2019-08-05T01:48:47.842] [INFO] safarnama - Connected to databse
+[2019-08-05T01:48:53.734] [INFO] safarnama - Connected to databse
+[2019-08-05T01:49:07.324] [INFO] safarnama - Connected to databse
+[2019-08-05T01:49:38.021] [INFO] safarnama - Connected to databse
+[2019-08-05T01:49:45.134] [INFO] safarnama - Connected to databse
+[2019-08-05T01:49:56.724] [ERROR] safarnama - unexpected error { Error: Not found
+    at app.use (D:\innovation\final\safarnama\server\index.js:81:17)
+    at Layer.handle [as handle_request] (D:\innovation\final\safarnama\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:317:13)
+    at D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:275:10)
+    at D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:635:15
+    at next (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\innovation\final\safarnama\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:317:13)
+    at D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\innovation\final\safarnama\node_modules\express\lib\router\index.js:275:10)
+    at app.use (D:\innovation\final\safarnama\server\index.js:66:3) status: 404 }

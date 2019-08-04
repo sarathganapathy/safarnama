@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const Review = require("../models/review");
 const logger = require("../config/logConfig");
+const { getToken } = require("../helper/util");
 const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/constants');
 
 /**
@@ -39,10 +40,14 @@ const getAllReviews = (req, res) => {
  * @return { undefined} does not return any value
  */
 const createReview = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   new Review({
     _id: new mongoose.Types.ObjectId(),
     details: req.body.details,
-    user: req.body.userId,
+    user: req.session.userId,
     selectedStars: req.body.selectedStars
   })
     .save()
@@ -96,6 +101,10 @@ const getReviewById = (req, res) => {
  * @return { undefined} does not return any value
  */
 const updateReview = (req, res, next) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { reviewId: id } } = req;
   Review.update({ _id: id }, { $set: req.body })
     .exec()
@@ -119,6 +128,10 @@ const updateReview = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteReview = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { reviewId: id } } = req;
   Review.remove({ _id: id })
     .exec()

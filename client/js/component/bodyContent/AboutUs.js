@@ -8,14 +8,17 @@ import i18n from '../../i18n/i18n';
  * @return {Object} this function returns element containing user details
  */
 const getUserDetails = phone => phone.map(userDetails => (
-  <div key={userDetails.userName} className="about-us-user-details util-text-area-container util-flex-flow-row-nowrap">
-    <div className="about-us-user-details-avatar">
+  <div
+    key={userDetails.userName}
+    className="safarnama-about-us-user-details util-text-area-container util-flex-flow-row-nowrap"
+  >
+    <div className="safarnama-about-us-user-details-avatar">
       <div>
         <img src={userDetails.image} alt={userDetails.userName} />
       </div>
-      <div className="about-us-user-details-avatar-username util-font-label">{userDetails.userName}</div>
+      <div className="safarnama-about-us-user-details-avatar-username util-font-label">{userDetails.userName}</div>
     </div>
-    <div className="about-us-user-details-description util-text-area-data">{userDetails.description}</div>
+    <div className="util-text-area-data safarnama-about-us-user-details-description ">{userDetails.description}</div>
   </div>
 ));
 
@@ -23,20 +26,18 @@ const getUserDetails = phone => phone.map(userDetails => (
  * @function AboutUs
  * @desc This is the Function for AboutUs
 */
-function AboutUs({ description, userDetails }) {
-  return (
-    <div className="about-us-wrapper util-background-container">
-      <div className="about-us-content util-background-container">
-        <div className="about-us-description util-text-area-container util-text-area-data">
-          {description}
-        </div>
-      </div>
-      <div className="about-us-content util-background-container">
-        {getUserDetails(userDetails)}
+const AboutUs = ({ description, userDetails }) => (
+  <div className="safarnama-about-us-wrapper util-background-container">
+    <div className="safarnama-about-us-content util-background-container">
+      <div className="safarnama-about-us-description  util-text-area-data">
+        {description}
       </div>
     </div>
-  );
-}
+    <div className="safarnama-about-us-content util-background-container">
+      {getUserDetails(userDetails)}
+    </div>
+  </div>
+);
 
 AboutUs.propTypes = {
   description: PropTypes.string,

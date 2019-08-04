@@ -1,6 +1,9 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": [
+    "airbnb-base",
+    "airbnb/rules/react"
+  ],
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",

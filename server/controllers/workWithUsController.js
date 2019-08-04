@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const WorkWithUs = require("../models/workWithUs");
 const logger = require("../config/logConfig");
+const { getToken } = require("../helper/util");
 const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/constants');
 
 /**
@@ -29,6 +30,10 @@ const getWorkWithUsDetails = (req, res) => {
  * This should be caled by admin only once at begining
  */
 const createWorkWithUsDetails = async (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   try {
     const { description, phone, email } = req.body;
     const workWithUs = await WorkWithUs.find().exec();
@@ -62,7 +67,11 @@ const createWorkWithUsDetails = async (req, res) => {
  * @param {Object} res- response object
  * @return { undefined} does not return any value
  */
-const updateWorkWithUs = (req, res, next) => {
+const updateWorkWithUs = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { workWithUsId: id } } = req;
   WorkWithUs.update({ _id: id }, { $set: req.body })
     .exec()
@@ -86,6 +95,10 @@ const updateWorkWithUs = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteWorkWithUsDetails = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { workWithUsId: id } } = req;
   WorkWithUs.remove({ _id: id })
     .exec()

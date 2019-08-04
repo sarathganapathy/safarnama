@@ -2,8 +2,17 @@
 const mongoose = require("mongoose");
 const Event = require("../models/event");
 const logger = require("../config/logConfig");
-const { getFilteredEvent } = require("../helper/util");
+const { getToken } = require("../helper/util");
+const { getFilteredEvent, convertDateStringToISO } = require("../helper/util");
 const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/constants');
+
+/**
+ * function to get the image path
+ * @param {Number} imageIndex - index of the image to fetch
+ * @param {Array} files - array of files
+ * @returns {String} image path
+ */
+const getImagePath = (imageIndex, files) => (files[imageIndex] ? files[imageIndex].path : "");
 
 /**
  * return the events as json in response of the http.
@@ -12,7 +21,7 @@ const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/co
  * @return { undefined} does not return any value
  */
 const getAllEvents = (req, res) => {
-  Event.find().exec().lean()
+  Event.find().lean().exec()
     .then((events) => {
       res.status(STATUS_CODE.SUCCESS).json({
         count: events.length,
@@ -34,16 +43,18 @@ const getAllEvents = (req, res) => {
 const createEvent = (req, res) => {
   new Event({
     _id: new mongoose.Types.ObjectId(),
-    bookingURL: req.body.bookingURL,
     eventName: req.body.eventName,
     description: req.body.description,
     eventLocation: req.body.eventLocation,
     details: req.body.details,
+    moreDetails: req.body.moreDetails,
     currency: req.body.currency,
     price: req.body.price,
-    eventStartDate: req.body.eventStartDate,
-    eventEndDate: req.body.eventEndDate,
-    eventImage: req.file.path
+    eventStartDate: convertDateStringToISO(req.body.eventStartDate),
+    eventEndDate: convertDateStringToISO(req.body.eventEndDate),
+    eventImage1: getImagePath(0, req.files),
+    eventImage2: getImagePath(1, req.files),
+    eventImage3: getImagePath(2, req.files)
   })
     .save()
     .then((event) => {
@@ -91,6 +102,10 @@ const getEventById = (req, res) => {
  * @return { undefined} does not return any value
  */
 const updateEvent = (req, res, next) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { eventId: id } } = req;
   Event.update({ _id: id }, { $set: req.body })
     .exec()
@@ -114,6 +129,10 @@ const updateEvent = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteEvent = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { eventId: id } } = req;
   Event.remove({ _id: id })
     .exec()

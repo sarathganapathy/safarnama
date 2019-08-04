@@ -27,6 +27,7 @@ const REGEX = {
  * @enum { Object } enum for route path.
  */
 const ROUTE_PATHS = {
+  AUTHORIZATION: "/authorization",
   BLOGS: "/blogs",
   BOOKINGS: "/bookings",
   EVENTS: "/events",
@@ -45,7 +46,8 @@ const STATUS_CODE = {
   CREATED: 201,
   INTERNAL_SERVER_ERROR: 500,
   NOT_FOUND: 404,
-  SUCCESS: 200
+  SUCCESS: 200,
+  UNAUTHORIZED: 401
 };
 
 /**
@@ -65,6 +67,8 @@ const SUCCESS_MESSAGE = {
   EVENT_NOT_FOUND: "No valid entry found for event ID",
   EVENT_UPDATED: "Event updated",
   EVENT_DELETED: "Event Deleted",
+  LOGIN_SUCCESS: "Successfully logged in",
+  LOGOUT_SUCCESS: "Successfully logged out",
   REVIEW_CREATED: "Created review successfully",
   REVIEW_NOT_FOUND: "No valid entry found for review ID",
   REVIEW_UPDATED: "Review updated",
@@ -86,10 +90,12 @@ const ERROR_MESSAGE = {
   BLOG_NOT_FOUND: "No valid entry found for blog ID",
   BOOKING_UPDATED: "Booking updated",
   EVENT_NOT_FOUND: "No valid entry found for event ID",
+  INVALID_USER: "Authentication failed. User not found.",
   REVIEW_NOT_FOUND: "No valid entry found for review ID",
   USER_NOT_FOUND: "No valid entry found for user ID",
   USER_UPDATED: "User updated",
-  WORK_WITH_US_ALREADY_EXISTS: "Work With us is already created and it cannot have multiple documents."
+  WORK_WITH_US_ALREADY_EXISTS: "Work With us is already created and it cannot have multiple documents.",
+  WRONG_PASSWORD: "Authentication failed. Wrong password."
 };
 
 module.exports = {

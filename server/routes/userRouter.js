@@ -1,4 +1,5 @@
 const express = require('express');
+const passport = require('passport');
 const {
   getAllUsers,
   createUser,
@@ -6,6 +7,7 @@ const {
   getUserById,
   deleteUser
 } = require('../controllers/userController');
+require('../config/passportConfig')(passport);
 
 const router = express.Router();
 
@@ -13,14 +15,14 @@ const router = express.Router();
 
 router.get("/", getAllUsers);
 
-router.post("/", createUser);
+router.post("/", passport.authenticate('jwt', { session: false }), createUser);
 
 router.get("/:userId", getUserById);
 
-router.patch("/:userId", updateUser);
+router.patch("/:userId", passport.authenticate('jwt', { session: false }), updateUser);
 
-router.put("/:userId", updateUser);
+router.put("/:userId", passport.authenticate('jwt', { session: false }), updateUser);
 
-router.delete("/:userId", deleteUser);
+router.delete("/:userId", passport.authenticate('jwt', { session: false }), deleteUser);
 
 module.exports = router;

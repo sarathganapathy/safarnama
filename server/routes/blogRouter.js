@@ -1,4 +1,5 @@
 const express = require('express');
+const passport = require('passport');
 const {
   getAllBlogs,
   createBlog,
@@ -6,6 +7,7 @@ const {
   getBlogById,
   deleteBlog
 } = require('../controllers/blogController');
+require('../config/passportConfig')(passport);
 
 const router = express.Router();
 
@@ -13,14 +15,14 @@ const router = express.Router();
 
 router.get("/", getAllBlogs);
 
-router.post("/", createBlog);
+router.post("/", passport.authenticate('jwt', { session: false }), createBlog);
 
 router.get("/:blogId", getBlogById);
 
-router.patch("/:blogId", updateBlog);
+router.patch("/:blogId", passport.authenticate('jwt', { session: false }), updateBlog);
 
-router.put("/:blogId", updateBlog);
+router.put("/:blogId", passport.authenticate('jwt', { session: false }), updateBlog);
 
-router.delete("/:blogId", deleteBlog);
+router.delete("/:blogId", passport.authenticate('jwt', { session: false }), deleteBlog);
 
 module.exports = router;

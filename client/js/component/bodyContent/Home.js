@@ -7,13 +7,12 @@ import Footer from './Footer';
  * @function Home
  * @desc This is the Function for home page which has slider/ Events and footer has children.
  */
-function Home() {
-  return (
-    <div>
-      <Slider />
-      <Events />
-      <Footer />
-    </div>
-  );
-}
+const Home = () => (
+  <div>
+    <Slider />
+    <Events />
+    <Footer />
+  </div>
+);
+
 export default Home;

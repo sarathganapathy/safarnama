@@ -1,11 +1,11 @@
 /* eslint-disable no-underscore-dangle */
 const mongoose = require("mongoose");
-const Bcrypt = require("bcrypt");
 const User = require("../models/user");
 const logger = require("../config/logConfig");
+const { getToken } = require("../helper/util");
 const {
-  DEFAULT_VALUES,
-  ERROR_MESSAGE, STATUS_CODE,
+  ERROR_MESSAGE,
+  STATUS_CODE,
   SUCCESS_MESSAGE
 } = require('../constants/constants');
 
@@ -22,9 +22,9 @@ const getAllUsers = (req, res) => {
         {
           count: users.length,
           users: users.map(({
-            _id, name, phone, email, dob
+            _id, name, username, phone, email, dob
           }) => ({
-            _id, name, phone, email, dob
+            _id, name, username, phone, email, dob
           }))
         }
       );
@@ -42,23 +42,28 @@ const getAllUsers = (req, res) => {
  * @return { undefined} does not return any value
  */
 const createUser = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   new User({
     _id: new mongoose.Types.ObjectId(),
+    username: req.body.username,
     name: req.body.name,
     phone: req.body.phone,
     email: req.body.email,
     dob: req.body.dob,
-    password: Bcrypt.hashSync(req.body.password, DEFAULT_VALUES.BCRYPT_ROUNDS),
+    password: req.body.password,
     userType: req.body.userType
   })
     .save()
     .then(({
-      _id, name, phone, email, dob
+      _id, name, username, phone, email, dob
     }) => {
       res.status(STATUS_CODE.CREATED).json({
         message: SUCCESS_MESSAGE.USER_CREATED,
         createdUser: {
-          _id, name, phone, email, dob
+          _id, name, phone, username, email, dob
         }
       });
     })
@@ -80,7 +85,12 @@ const getUserById = (req, res) => {
     .exec()
     .then((user) => {
       if (user) {
-        res.status(STATUS_CODE.SUCCESS).json({ user });
+        const {
+          _id, name, username, phone, email, dob
+        } = user;
+        res.status(STATUS_CODE.SUCCESS).json({
+          _id, name, username, phone, email, dob
+        });
       } else {
         res
           .status(STATUS_CODE.NOT_FOUND)
@@ -100,6 +110,10 @@ const getUserById = (req, res) => {
  * @return { undefined} does not return any value
  */
 const updateUser = (req, res, next) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { userId: id } } = req;
   User.update({ _id: id }, { $set: req.body })
     .exec()
@@ -123,6 +137,10 @@ const updateUser = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteUser = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { userId: id } } = req;
   User.remove({ _id: id })
     .exec()

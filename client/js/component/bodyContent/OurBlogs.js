@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import CommentBox from "./CommentBox";
+import NoResults from "./NoResults";
 import i18n from '../../i18n/i18n';
 import { createUserBlog } from "../../actions/actionCreators";
 
@@ -13,7 +14,6 @@ import { createUserBlog } from "../../actions/actionCreators";
  * @return {Object} this function returns props which will be passed to component.
  */
 const mapStateToProps = ({ blogsData: { blogs } }) => ({ blogs });
-
 
 /**
  * @desc function connects the redux dispatch to prop.
@@ -29,16 +29,16 @@ const mapDispatchToProps = dispatch => ({
  * @param {Array} blogs - Array of blogs.
  * @return {Array<Blog>} this function returns array of Blog class containing element.
  */
-const getBlogs = blogs => (blogs.map(({ _id, ...blog }) => (<CommentBox key={_id} {...blog} />)));
+const getBlogs = blogs => (blogs.map(({ _id, ...blog }) => (
+  <CommentBox classes="safarnama-blogs-content-background-shade" key={_id} {...blog} />
+)));
 
 /**
  * @desc function returns element saying there is no blog.
- * @return {Object} this function returns element saying there is no blog.
+ * @return {NoResults} this function returns element saying there is no blog.
  */
 const getNoBlogsLabel = () => (
-  <div className="blogs-content-no-result-label util-text-area-container">
-    {i18n.NO_BLOGS_AVAILABLE}
-  </div>
+  <NoResults label={i18n.NO_BLOGS_AVAILABLE} />
 );
 
 /**
@@ -70,8 +70,7 @@ class OurBlogs extends Component {
     const { textValue } = this.state;
     const { createBlog } = this.props;
     createBlog({
-      details: textValue.trim(),
-      userId: "5cf7d1f1e7241e2ba43e50f6" // @TODO- will replace it to current loged in user id.
+      details: textValue.trim()
     });
     this.setState({ textValue: "" });
   }
@@ -83,15 +82,15 @@ class OurBlogs extends Component {
     const { blogs } = this.props;
     const { isSaveButtonDisabled, textValue } = this.state;
     return (
-      <div className="blogs util-background-container">
-        <div className="blogs-content-body util-background-container">
+      <div className="safarnama-blogs util-background-container">
+        <div className="safarnama-blogs-content-body util-background-container">
           {blogs.length ? getBlogs(blogs) : getNoBlogsLabel()}
         </div>
-        <div className="blogs-create-content">
-          <div className="blogs-create-content-header util-text-area-container util-header-text">
+        <div className="safarnama-blogs-create-content">
+          <div className="safarnama-blogs-create-content-header util-text-area-container util-header-text">
             {i18n.CREATE_BLOG}
           </div>
-          <div className="blogs-create-content-body util-background-container">
+          <div className="safarnama-blogs-create-content-body util-background-container">
             <TextField
               fullWidth
               multiline
@@ -99,7 +98,7 @@ class OurBlogs extends Component {
               placeholder={i18n.ENTER_YOUR_BLOG}
               value={textValue}
             />
-            <div className="blogs-create-content-body-button util-flex-align-right">
+            <div className="safarnama-blogs-create-content-body-button util-flex-align-right">
               <Button
                 variant="contained"
                 disabled={isSaveButtonDisabled}
@@ -118,7 +117,7 @@ class OurBlogs extends Component {
 
 OurBlogs.propTypes = {
   blogs: PropTypes.instanceOf(Array),
-  createBlog: PropTypes.instanceOf(Object).isRequired
+  createBlog: PropTypes.func.isRequired
 };
 
 OurBlogs.defaultProps = {

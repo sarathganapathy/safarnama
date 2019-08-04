@@ -1,4 +1,4 @@
-.blogs {
+.safarnama-blogs {
     padding: @absolute-very-tight;
     margin: @absolute-tight @absolute-very-tight;
     border-radius: @absolute-very-tight;
@@ -9,13 +9,10 @@
             margin: @absolute-very-tight;
             border-radius: @absolute-very-tight;
         }
-
-        &-no-result-label {
-            padding: @absolute-very-tight;
-            text-align: center;
-            margin: @absolute-very-tight;
+        &-background-shade {
             border-radius: @absolute-very-tight;
-            .font(@dimgrey, @absolute-loose);
+            background-color: @darkgrey;
+            box-shadow: @box-shadow;
         }
     }
 
@@ -24,6 +21,7 @@
             padding: @absolute-very-tight;
             margin: @absolute-loose @absolute-very-tight;
             border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+            .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick, @line-height-medium);
         }
 
         &-body {

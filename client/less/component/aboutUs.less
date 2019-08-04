@@ -1,4 +1,4 @@
-.about-us {
+.safarnama-about-us {
     &-wrapper {
         padding: @absolute-very-tight;
         margin: @absolute-tight @absolute-very-tight;
@@ -9,6 +9,10 @@
         padding: @absolute-loose;
         margin: @absolute-very-tight;
         border-radius: @absolute-very-tight @absolute-very-tight 0 0;
+        white-space: pre-wrap;
+        .font(@mediumgrey, @absolute-very-loose, @text-description, @font-weight-thin);
+        text-align: center;
+        background: @light-gradient-grey;
     }
 
     &-content {
@@ -118,6 +122,8 @@
 
             );
             margin:@absolute-very-tight;
+            padding: @absolute-very-loose;
+            .font(@darkgrey, @absolute-loose, @text-description, @font-weight-thick);
         }
     }
 }

@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import StarReview from './starReview/StarReview';
 import CommentBox from "./CommentBox";
+import NoResults from "./NoResults";
 import i18n from '../../i18n/i18n';
 import { createUserReview } from "../../actions/actionCreators";
 
@@ -31,23 +32,21 @@ const mapDispatchToProps = dispatch => ({
  * @return {Array} this function returns array of review comment element.
  */
 const getReviews = reviews => (reviews.map(({ _id, selectedStars, ...commentData }) => (
-  <div key={_id} className="reviews-star-content">
+  <div key={_id} className="safarnama-reviews-star-content">
     <StarReview
       isEditable={false}
       selectedStars={selectedStars}
     />
-    <CommentBox classes="reviews-comment-box-wrapper" {...commentData} />
+    <CommentBox classes="safarnama-reviews-comment-box-wrapper" {...commentData} />
   </div>
 )));
 
 /**
  * @desc function returns element saying there is no reviews.
- * @return {Object} this function returns element saying there is no reviews.
+ * @return {NoResults} this function returns element saying there is no reviews.
  */
 const getNoReviewsLabel = () => (
-  <div className="reviews-content-no-result-label util-text-area-container util-text-area-data">
-    {i18n.NO_REVIEWS_AVAILABLE}
-  </div>
+  <NoResults label={i18n.NO_REVIEWS_AVAILABLE} />
 );
 
 /**
@@ -92,7 +91,6 @@ class Review extends Component {
     createReview(
       {
         details: textValue.trim(),
-        userId: "5cf7d1f1e7241e2ba43e50f6", // @TODO- will replace it to current loged in user id.
         selectedStars: selectedReviewStars
       }
     );
@@ -106,13 +104,17 @@ class Review extends Component {
     const { reviews } = this.props;
     const { textValue, selectedReviewStars } = this.state;
     return (
-      <div className="reviews util-background-container">
-        <div className="reviews-content-body util-background-container">
+      <div className="safarnama-reviews util-background-container">
+        <div className="safarnama-reviews-content-body util-background-container">
           {reviews.length ? getReviews(reviews) : getNoReviewsLabel()}
         </div>
-        <div className="reviews-create-content">
-          <div className="reviews-create-content-header util-text-area-container util-header-text">{i18n.RATE_US}</div>
-          <div className="reviews-create-content-body util-background-container">
+        <div className="safarnama-reviews-create-content">
+          <div
+            className="safarnama-reviews-create-content-header util-text-area-container util-header-text"
+          >
+            {i18n.RATE_US}
+          </div>
+          <div className="safarnama-reviews-create-content-body util-background-container">
             <StarReview
               selectedStars={selectedReviewStars}
               onSelectionChange={this.starSelectionChangeHandler}
@@ -124,7 +126,7 @@ class Review extends Component {
               placeholder={i18n.ENTER_YOUR_REVIEW_COMMENTS}
               value={textValue}
             />
-            <div className="reviews-create-content-body-button util-flex-align-right">
+            <div className="safarnama-reviews-create-content-body-button util-flex-align-right">
               <Button
                 variant="contained"
                 size="small"
@@ -143,7 +145,7 @@ class Review extends Component {
 
 Review.propTypes = {
   reviews: PropTypes.instanceOf(Array),
-  createReview: PropTypes.instanceOf(Object).isRequired
+  createReview: PropTypes.func.isRequired
 };
 
 Review.defaultProps = {

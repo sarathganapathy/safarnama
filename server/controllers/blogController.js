@@ -2,7 +2,9 @@
 const mongoose = require("mongoose");
 const Blog = require("../models/blog");
 const logger = require("../config/logConfig");
+const { getToken } = require("../helper/util");
 const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/constants');
+
 /**
  * return the blogs as json in response of the http.
  * @param {Object} req - request object
@@ -36,10 +38,14 @@ const getAllBlogs = (req, res) => {
  * @return { undefined} does not return any value
  */
 const createBlog = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   new Blog({
     _id: new mongoose.Types.ObjectId(),
     details: req.body.details,
-    user: req.body.userId
+    user: req.session.userId
   })
     .save()
     .then((blog) => {
@@ -90,6 +96,10 @@ const getBlogById = (req, res) => {
  * @return { undefined} does not return any value
  */
 const updateBlog = (req, res, next) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { blogId: id } } = req;
   Blog.update({ _id: id }, { $set: req.body })
     .exec()
@@ -113,6 +123,10 @@ const updateBlog = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteBlog = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { blogId: id } } = req;
   Blog.remove({ _id: id })
     .exec()

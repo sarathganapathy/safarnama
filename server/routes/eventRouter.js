@@ -1,5 +1,6 @@
 const express = require('express');
 const multer = require('multer');
+const passport = require('passport');
 const {
   getAllEvents,
   createEvent,
@@ -8,6 +9,7 @@ const {
   deleteEvent
 } = require('../controllers/eventController');
 const { LOCAL_PATHS, REGEX } = require('../constants/constants');
+require('../config/passportConfig')(passport);
 
 // Multer disk storage for storing upladed images.
 const storage = multer.diskStorage({
@@ -51,14 +53,14 @@ const router = express.Router();
 
 router.get("/", getAllEvents);
 
-router.post("/", upload.single('eventImage'), createEvent);
+router.post("/", upload.array('photos', 3), createEvent); // Need to add authorization
 
 router.get("/:eventId", getEventById);
 
-router.patch("/:eventId", updateEvent);
+router.patch("/:eventId", passport.authenticate('jwt', { session: false }), updateEvent);
 
-router.put("/:eventId", updateEvent);
+router.put("/:eventId", passport.authenticate('jwt', { session: false }), updateEvent);
 
-router.delete("/:eventId", deleteEvent);
+router.delete("/:eventId", passport.authenticate('jwt', { session: false }), deleteEvent);
 
 module.exports = router;

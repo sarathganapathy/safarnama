@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const Booking = require("../models/booking");
 const logger = require("../config/logConfig");
+const { getToken } = require("../helper/util");
 const { ERROR_MESSAGE, STATUS_CODE, SUCCESS_MESSAGE } = require('../constants/constants');
 
 /**
@@ -28,6 +29,10 @@ const getAllBookings = (req, res) => {
  * @return { undefined} does not return any value
  */
 const createBooking = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   new Booking({
     _id: new mongoose.Types.ObjectId(),
     user: req.body.userId,
@@ -60,7 +65,7 @@ const getBookingById = (req, res) => {
     .exec()
     .then((booking) => {
       if (booking) {
-        res.status(STATUS_CODE.SUCCESS).json({ booking });
+        res.status(STATUS_CODE.SUCCESS).json(booking);
       } else {
         res
           .status(STATUS_CODE.NOT_FOUND)
@@ -80,6 +85,10 @@ const getBookingById = (req, res) => {
  * @return { undefined} does not return any value
  */
 const updateBooking = (req, res, next) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { bookingId: id } } = req;
   Booking.update({ _id: id }, { $set: req.body })
     .exec()
@@ -103,6 +112,10 @@ const updateBooking = (req, res, next) => {
  * @return { undefined} does not return any value
  */
 const deleteBooking = (req, res) => {
+  if (!getToken(req.headers)) {
+    res.status(STATUS_CODE.INTERNAL_SERVER_ERROR).json({ error: "no token" });
+    return;
+  }
   const { params: { bookingId: id } } = req;
   Booking.remove({ _id: id })
     .exec()

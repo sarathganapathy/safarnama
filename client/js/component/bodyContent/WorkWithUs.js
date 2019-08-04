@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
+import NoResults from "./NoResults";
 import i18n from '../../i18n/i18n';
 /**
  * @desc function connects the redux state to component props
@@ -26,7 +27,7 @@ const mapStateToProps = (
  */
 const getPhoneDetails = phone => phone.map(({ type, number }) => (
   <div key={number}>
-    <span className="util-font-label">{type}</span>
+    <span className="safarnama-work-with-us-contact-label">{type}</span>
     <span> : </span>
     <span>{number}</span>
   </div>
@@ -35,12 +36,10 @@ const getPhoneDetails = phone => phone.map(({ type, number }) => (
 /**
  * @desc function returns the no result label.
  * @param {Array} phone - phone array containing object of phone details.
- * @return {Object} this function returns element containing no result label
+ * @return {NoResults} this function returns element containing no result label
  */
 const getNoResultLabel = () => (
-  <div className="work-with-us-no-result-label util-text-area-container util-text-area-data">
-    {i18n.NO_OPENINGS}
-  </div>
+  <NoResults label={i18n.NO_OPENINGS} />
 );
 
 /**
@@ -52,19 +51,27 @@ const getNoResultLabel = () => (
  */
 const getBodyContent= (description, phone, email) => (
   <>
-    <div className="work-with-us-content util-background-container">
-      <div className="work-with-us-description-header util-text-area-container util-header-text">
-        {description.header}
+    <div className="safarnama-work-with-us-content util-background-container">
+      <div className="safarnama-work-with-us-background-shade">
+        <div className="safarnama-work-with-us-description-header util-text-area-container">
+          {description.header}
+        </div>
       </div>
-      <div className="work-with-us-description-data util-text-area-container util-text-area-data">
-        {description.content}
+      <div className="safarnama-work-with-us-background-shade">
+        <div className="safarnama-work-with-us-description-data util-text-area-container">
+          {description.content}
+        </div>
       </div>
     </div>
-    <div className="work-with-us-content">
-      <div className="work-with-us-contact-phone util-text-area-container">
-        { getPhoneDetails(phone) }
+    <div className="safarnama-work-with-us-content">
+      <div className="safarnama-work-with-us-background-shade">
+        <div className="safarnama-work-with-us-contact-phone util-text-area-container">
+          { getPhoneDetails(phone) }
+        </div>
       </div>
-      <div className="util-font-label work-with-us-contact-email util-text-area-container">{email}</div>
+      <div className="safarnama-work-with-us-background-shade">
+        <div className="safarnama-work-with-us-contact-email util-text-area-container">{email}</div>
+      </div>
     </div>
   </>
 );
@@ -73,13 +80,11 @@ const getBodyContent= (description, phone, email) => (
  * @function WorkWithUs
  * @desc This is the Function for WorkWithUs
 */
-function WorkWithUs({ description, phone, email }) {
-  return (
-    <div className="work-with-us-wrapper util-background-container">
-      {description ? getBodyContent(description, phone, email) : getNoResultLabel() }
-    </div>
-  );
-}
+const WorkWithUs = ({ description, phone, email }) => (
+  <div className="safarnama-work-with-us-wrapper util-background-container">
+    {description ? getBodyContent(description, phone, email) : getNoResultLabel() }
+  </div>
+);
 
 WorkWithUs.propTypes = {
   description: PropTypes.instanceOf(Object),
@@ -88,10 +93,7 @@ WorkWithUs.propTypes = {
 };
 
 WorkWithUs.defaultProps = {
-  description: {
-    header: "",
-    content: ""
-  },
+  description: null,
   phone: [],
   email: ""
 };

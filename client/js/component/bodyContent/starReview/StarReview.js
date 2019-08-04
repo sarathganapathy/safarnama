@@ -1,4 +1,3 @@
-/* eslint-disable react/sort-comp */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Star from "./Star";
@@ -11,16 +10,31 @@ export default class StarReview extends Component {
   // initial state
   state = {
     totalSelectedStars: 0,
-    isStar1Selected: false,
-    isStar2Selected: false,
-    isStar3Selected: false,
-    isStar4Selected: false,
-    isStar5Selected: false
-  };
+    ...[...Array(5)].reduce((accumulator, _, index) => {
+      accumulator[`isStar${index+1}Selected`] = false;
+      return accumulator;
+    }, {})
+  }
+
+  /**
+     @inheritdoc
+     */
+  static getDerivedStateFromProps({ selectedStars }, { totalSelectedStars }) {
+    return !(selectedStars > 5 || selectedStars < 0) && selectedStars !== totalSelectedStars
+      ? {
+        ...[...Array(5)].reduce(
+          (accumulator, _, index) => {
+            accumulator[`isStar${index+1}Selected`]= index+1 <= selectedStars;
+            return accumulator;
+          }, {}
+        ),
+        totalSelectedStars: selectedStars
+      } : null;
+  }
 
     /**
     * @desc Event handler for star selection change.
-    * @param {Object} e - event.
+    * @param {Object} event - event.
     * @param {Boolean} isSelected - boolean ststing whether the value is selected.
     * @param {Number} selectedStarKey - selected star number.
     * @return {undefined} this function does not return any value.
@@ -35,25 +49,9 @@ export default class StarReview extends Component {
             return accumulator;
           }, {}
         ),
-        ...{ totalSelectedStars: isSelected ? selectedStarKey : (selectedStarKey - 1) }
+        totalSelectedStars: isSelected ? selectedStarKey : (selectedStarKey - 1)
       });
       onSelectionChange(event, isSelected ? selectedStarKey : (selectedStarKey- 1));
-    }
-
-    /**
-     @inheritdoc
-     */
-    static getDerivedStateFromProps({ selectedStars }, { totalSelectedStars }) {
-      return !(selectedStars > 5 || selectedStars < 0) && selectedStars !== totalSelectedStars
-        ? {
-          ...[...Array(5)].reduce(
-            (accumulator, _, index) => {
-              accumulator[`isStar${index+1}Selected`]= index+1 <= selectedStars;
-              return accumulator;
-            }, {}
-          ),
-          ...{ totalSelectedStars: selectedStars }
-        } : null;
     }
 
     /**

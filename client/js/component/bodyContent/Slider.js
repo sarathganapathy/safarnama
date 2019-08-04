@@ -17,7 +17,7 @@ const getSliderImages = images => images.map(image => (
  * @function Slider
  * @desc This is the slider class for displaying image carousel.
  */
-function Slider(props) {
+const Slider = (props) => {
   const { images } = props;
   return (
     <div className="safarnama-carousel-wrapper">
@@ -38,7 +38,7 @@ function Slider(props) {
       </Carousel>
     </div>
   );
-}
+};
 
 Slider.propTypes = {
   images: PropTypes.instanceOf(Array)

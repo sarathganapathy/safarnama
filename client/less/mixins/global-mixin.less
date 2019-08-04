@@ -1,15 +1,14 @@
 // Property Name: font
-// Values: header | bodyheader
-.font(@color : @light-black, @size : @absolute-very-loose, @family : monospace, @weight : @font-weight-thin ) {
+.font(@color : @light-black, @size : @absolute-very-loose, @family : monospace, @weight : @font-weight-thin, @lineHeight : @line-height-min ) {
     color: @color;
     font-size: @size;
     font-weight: @weight;
     font-family: @family;
-    line-height: 1.35417em;
+    line-height: @lineHeight;
 }
 
 // Property Name: background-theme
-// Values: background-color
+// values : any color
 .background-theme(@bg-color: @white) {
     background-color: @bg-color;
     box-shadow: @box-shadow;
